@@ -1,0 +1,19 @@
+<div class='ineeda'>
+  <div class='ineeda-bar'>
+    <div class='ineeda-input-wrap'>
+      <span class='ineeda-label float-left'>I need a</span>
+      <input class="ineeda-input col-md-8" ng-focus='onInputFocus()' ng-model='selected' placeholder='{{serviceplaceholder}}' typeahead='service for service in services|filter:$viewValue'></input>
+    </div>
+  </div>
+  <div class='ineeda-bar'>
+    <div class='ineeda-input-wrap'>
+      <span class='ineeda-label float-left'>to</span>
+      <input class="ineeda-input col-md-8" ng-model='selectedskill' placeholder='{{skillsplaceholder}}' typeahead='skill for skill in skills|filter:$viewValue'></input>
+    </div>
+  </div>
+</div>
+
+
+
+
+

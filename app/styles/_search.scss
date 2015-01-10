@@ -1,0 +1,106 @@
+.float-left{
+  float: left
+}
+.ineeda{
+  margin-top:145px;
+  background: none repeat scroll 0 0 transparent;
+  transition: all 0.25s ease-out 0s;
+  width:1200px;
+
+}
+.ineeda .ineeda-input-wrap:after {
+    border: medium solid rgba(255, 255, 255, 0);
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    width: 0;
+}
+.ineeda .ineeda-label{
+    height: 52px;
+    line-height: 52px;
+    padding-left: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-style: italic;
+
+}
+.ineeda .ineeda-input-wrap:after {
+    border-color: rgba(255, 255, 255, 0) white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-width: 12px;
+    margin-top: -12px;
+    top: 50%;
+}
+
+.ineeda .ineeda-input-wrap {
+    //background: url("/../../images/ineeda-btn.png") no-repeat scroll 720px center white !important;
+    height: 47px;
+    left: 45px;
+    position: relative;
+    width: 765px;
+}
+.ineeda .ineeda-input-wrap {
+    background: none repeat scroll 0 0 #fff;
+    height: 52px;
+    left: 6px;
+    position: relative;
+    width: 400px;
+    float: left
+
+}
+.ineeda .ineeda-input {
+    border: medium none;
+    background: none repeat scroll 0 0 transparent;
+    color: #aaa !important;
+    font-size: 28px;
+    font-style: italic;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 5px;
+    margin-top: 2px;
+    
+}
+.ineeda .ineeda-input-wrap ul{
+    border: medium none;
+    background: none repeat scroll 0 0 white;
+    box-shadow:none;
+    color: #aaa !important;
+    font-size: 28px;
+    line-height: 45px;
+    padding: 0px;
+    margin-top: 2px;
+    z-index: 10000;
+    position:absolute!important;
+    top:-8px!important;
+    border-radius:0px;
+}
+.ineeda .ineeda-input-wrap ul{
+    margin:60px 0 0 0;
+}
+.ineeda .ineeda-input-wrap li a{
+  color:#aaa;
+  font-family: "PT Sans","Helvetica Neue",Helvetica,arial,sans-serif;
+}
+.ineeda .ineeda-input-wrap li:hover a{
+  text-decoration: none;
+  color: white
+}
+.ineeda .ineeda-input-wrap li.active {
+  background-color: #aaa ;
+  
+}
+.ineeda .ineeda-input-wrap li.active a{
+  color:white;
+  
+}
+.ineeda .ineeda-input-wrap li:hover{
+  background-color: #aaa ;
+  color:white;
+}
+.ineeda .ineeda-input-wrap li.padding35{
+  padding-left:35px;
+}
+.ineeda .ineeda-input-wrap li.padding105{
+  padding-left:105px;
+}
