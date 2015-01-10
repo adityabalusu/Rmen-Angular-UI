@@ -6,7 +6,8 @@ angular.module('geekvaletApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.utils'
   
 ])
   .config(function ($routeProvider,RestangularProvider) {
@@ -19,5 +20,5 @@ angular.module('geekvaletApp', [
         redirectTo: '/'
       });
 
-    //RestangularProvider.setBaseUrl('/search');
+   // RestangularProvider.setBaseUrl('/search');
   });

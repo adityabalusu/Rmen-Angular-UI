@@ -2,7 +2,7 @@
   <div class='ineeda-bar'>
     <div class='ineeda-input-wrap'>
       <span class='ineeda-label float-left'>I need a</span>
-      <input class="ineeda-input col-md-8" ng-focus='onInputFocus()' ng-model='selected' placeholder='{{serviceplaceholder}}' typeahead='service for service in services|filter:$viewValue'></input>
+      <input class="ineeda-input col-md-8" ui-keyup="{13:'serviceSelected()'}" ng-focus='onInputFocus()' ng-model='selected' placeholder='{{serviceplaceholder}}' typeahead='service for service in services|filter:$viewValue'></input>
     </div>
   </div>
   <div class='ineeda-bar'>
