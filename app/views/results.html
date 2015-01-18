@@ -1,0 +1,9 @@
+<div  ng-repeat='result in results' class="list-group service-card">
+  <div href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">{{result.name}}</h4>
+    <p class="list-group-item-text">{{result.phone_number}}</p>
+    <p class="list-group-item-text">Available {{result.availability}}</p>
+    <button class="btn btn-primary" ng-dialog="views/customerdetails.html" ng-dialog-class="ngdialog-theme-plain" ng-dialog-show-close="false"> Book Appoinment</button>
+  </div>
+
+</div>

@@ -6,13 +6,21 @@ angular.module('geekvaletApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
+  'ngDialog',
   'ngRoute',
   'ui.utils'
   
 ])
   .config(function ($routeProvider,RestangularProvider) {
     $routeProvider
-      .when('/search', {
+      .when('/results', {
+        templateUrl: 'views/results.html',
+        controller: 'ResultsCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      })
+      .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })

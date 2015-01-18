@@ -8,9 +8,13 @@
   <div class='ineeda-bar'>
     <div class='ineeda-input-wrap'>
       <span class='ineeda-label float-left'>to</span>
-      <input class="ineeda-input col-md-8" ng-model='selectedskill' placeholder='{{skillsplaceholder}}' typeahead='skill for skill in skills|filter:$viewValue'></input>
+      <input class="ineeda-input col-md-8" ng-model='selectedskill' ui-keyup="{13:'skillSelected()'}" placeholder='{{skillsplaceholder}}' typeahead='skill for skill in skills|filter:$viewValue'></input>
     </div>
   </div>
+  <button class='btn btn-warning' ng-click='skillSelected()'>
+  Submit
+  </button>
+
 </div>
 
 

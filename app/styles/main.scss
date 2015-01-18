@@ -1,7 +1,9 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-
+$fa-font-path: "../bower_components/fontawesome/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'fontawesome/scss/font-awesome';
 @import "search";
+@import "results";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -75,7 +77,7 @@ html,body{
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 930px;
     }
 
     /* Remove the padding we set earlier */

@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('geekvaletApp')
-  .controller('MainCtrl', function ($scope,Restangular) {
-    var Search = Restangular.one('search/');
-
-    Search.get().then(function(response){
+  .controller('MainCtrl',['$scope','$location','serviceMatch', function ($scope,location,Servicematch) {
+    Servicematch.getSearch().then(function(response){
       $scope.serviceResponses = response;
       $scope.services = $scope.serviceResponses.services;
     });
@@ -18,8 +16,10 @@ angular.module('geekvaletApp')
     );
 
     $scope.serviceSelected = function(){
+      Servicematch.setSelectedService($scope.selected);
+
       $scope.serviceResponses.get({s:$scope.selected}).then(function(skills){
-          $scope.skills = skills[$scope.selected];
+          $scope.skills =skills[$scope.selected];
           $scope.skillsplaceholder = $scope.skills[0];
 
         });
@@ -32,4 +32,11 @@ angular.module('geekvaletApp')
       
       
     };
-  });
+    $scope.skillSelected = function(){
+      Servicematch.setSelectedSkill($scope.selectedskill) ;
+      location.url("results");
+
+        
+
+    }
+  }]);
